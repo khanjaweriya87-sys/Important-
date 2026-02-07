@@ -1,48 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Happy Birthday Rehan 💙</title>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Rehan 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      background: linear-gradient(#0f2027, #203a43, #2c5364);
-      color: white;
-      font-family: 'Georgia', serif;
-      text-align: center;
+      margin: 0;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #ffc1d9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
       padding: 30px;
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      animation: fadeUp 1.2s ease;
     }
+
     h1 {
-      font-size: 40px;
-      margin-top: 40px;
+      color: #b03060;
+      font-size: 26px;
+      margin-bottom: 8px;
     }
+
+    h2 {
+      color: #8b2c4f;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
     p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: auto;
+      color: #5a2a3a;
+      font-size: 14px;
+      line-height: 1.6;
     }
-    .box {
-      background: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 15px;
-      margin-top: 30px;
+
+    .btn {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 22px;
+      background: #ff6fa5;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 14px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(255, 111, 165, 0.4);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .heart {
+      position: absolute;
+      color: #ff6fa5;
+      font-size: 18px;
+      animation: float 6s infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100vh);
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Happy Birthday Rehan 🎂</h1>
-  <h3>19 April 💫</h3>
+  <div class="card">
+    <h1>Happy Birthday Rehan 🎂</h1>
+    <h2>19 April 💖</h2>
 
-  <div class="box">
     <p>
-      To the person who makes my world brighter 💙  
-      This little website is just a tiny piece of how much you mean to me.
+      This little pink website is just a tiny piece  
+      of how special you are to me 💕  
     </p>
+
+    <a class="btn" href="letter.html">Flip to continue →</a>
   </div>
 
-  <div class="box">
-    <h2>💌 A Letter For You</h2>
-    <p>
-      I’m grateful for every smile, every memory, and every moment with you.  
-      You’re spe
+  <!-- floating hearts -->
+  <div class="heart" style="left:10%; animation-delay:0s;">💗</div>
+  <div class="heart" style="left:40%; animation-delay:2s;">💖</div>
+  <div class="heart" style="left:70%; animation-delay:4s;">💞</div>
 
+</body>
+</html>
