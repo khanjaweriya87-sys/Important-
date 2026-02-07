@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#ffe6ec, #fff);
+  text-align: center;
+  color: #444;
+}
+.screen { display: none; padding: 30px; }
+.active { display: block; }
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #ff4d6d;
+}
+
+button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
