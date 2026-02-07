@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Letter For You 💌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe0ec, #ffc9dd);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .letter {
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 28px;
+      width: 90%;
+      max-width: 360px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      animation: open 1.2s ease;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b03060;
+      margin-bottom: 14px;
+      font-size: 22px;
+    }
+
+    p {
+      color: #5a2a3a;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      margin-top: 22px;
+      padding: 12px;
+      background: #ff6fa5;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    @keyframes open {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="letter">
+    <h1>💌 A Letter For You</h1>
+
+    <p>
+      Dear Rehan,<br><br>
+      Every smile, every memory, every little moment with you
+      means more to me than words can explain.  
+      You make ordinary days feel special, just by being you 💖
+      <br><br>
+      This page is only a small reminder of how much you matter to me.
+    </p>
+
+    <a class="btn" href="next.html">Flip to next →</a>
+  </div>
+
+</body>
+</html>
